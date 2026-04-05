@@ -11,6 +11,10 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.myfirstcomposeapp.components.MyIcon
+import com.example.myfirstcomposeapp.components.MyNetworkImage
+import com.example.myfirstcomposeapp.components.MySwitch
+import com.example.myfirstcomposeapp.components.MyTexts
 import com.example.myfirstcomposeapp.components.layout.MyColumn
 import com.example.myfirstcomposeapp.components.layout.MyComplexLayout
 import com.example.myfirstcomposeapp.components.layout.MyRow
@@ -23,25 +27,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             MyFirstComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MyComplexLayout(Modifier.padding(innerPadding))
+                    MyIcon(Modifier.padding(innerPadding))
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MyFirstComposeAppTheme {
-        Greeting("Android")
     }
 }

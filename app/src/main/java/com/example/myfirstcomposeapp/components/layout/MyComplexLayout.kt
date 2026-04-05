@@ -16,22 +16,35 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
-
-@Preview
 @Composable
-fun MyComplexLayout(modifier: Modifier){
+fun MyComplexLayout(modifier: Modifier) {
     Column(modifier = modifier) {
-        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Red)){}
+        Box(modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth()
+            .background(Color.Red)) {}
         Spacer(Modifier.height(20.dp))
-        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Blue)){
-            Row{
-                Box(modifier = Modifier.weight(1f).height(25.dp).background(Color.Gray)){}
+        Box(modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth()
+            .background(Color.Blue)) {
+            Row {
+                Box(modifier = Modifier
+                    .weight(1f)
+                    .height(25.dp)
+                    .background(Color.Gray)) {}
                 Spacer(Modifier.width(20.dp))
-                Box(modifier = Modifier.weight(1f).height(185.dp).background(Color.Green)){
+                Box(modifier = Modifier
+                    .weight(1f)
+                    .height(185.dp)
+                    .background(Color.Green)) {
                     Text("Hola mundo")
                 }
             }
         }
-        Box(modifier = Modifier.weight(1f).fillMaxWidth().background(Color.Yellow)){}
+        Box(modifier = Modifier
+            .weight(1f)
+            .fillMaxWidth()
+            .background(Color.Yellow)) {}
     }
 }
