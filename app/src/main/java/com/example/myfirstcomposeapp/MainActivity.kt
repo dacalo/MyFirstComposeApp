@@ -15,8 +15,14 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.myfirstcomposeapp.components.MYDropDownItem
+import com.example.myfirstcomposeapp.components.MyAdvanceList
+import com.example.myfirstcomposeapp.components.MyBasicList
 import com.example.myfirstcomposeapp.components.MyCheckBox
+import com.example.myfirstcomposeapp.components.MyDropDownMenu
+import com.example.myfirstcomposeapp.components.MyExposedDropDownMenu
 import com.example.myfirstcomposeapp.components.MyIcon
+import com.example.myfirstcomposeapp.components.MyNavigationBar
 import com.example.myfirstcomposeapp.components.MyNetworkImage
 import com.example.myfirstcomposeapp.components.MySwitch
 import com.example.myfirstcomposeapp.components.MyTexts
@@ -35,13 +41,15 @@ class MainActivity : ComponentActivity() {
             MyFirstComposeAppTheme {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
-                    topBar = { MyTopAppBar() }
+                    topBar = { MyTopAppBar() },
+                    bottomBar= { MyNavigationBar() }
                     ) { innerPadding ->
                     Box(
                         modifier = Modifier.fillMaxSize().padding(innerPadding).background(Color.Cyan),
                         contentAlignment = Alignment.Center
                     ){
-                        Text(text = "Esta es mi screen")
+                        //Text(text = "Esta es mi screen")
+                        MyAdvanceList()
                     }
                 }
             }
