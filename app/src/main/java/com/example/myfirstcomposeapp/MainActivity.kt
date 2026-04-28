@@ -21,6 +21,7 @@ import com.example.myfirstcomposeapp.components.MyBasicList
 import com.example.myfirstcomposeapp.components.MyCheckBox
 import com.example.myfirstcomposeapp.components.MyDropDownMenu
 import com.example.myfirstcomposeapp.components.MyExposedDropDownMenu
+import com.example.myfirstcomposeapp.components.MyGridList
 import com.example.myfirstcomposeapp.components.MyIcon
 import com.example.myfirstcomposeapp.components.MyNavigationBar
 import com.example.myfirstcomposeapp.components.MyNetworkImage
@@ -28,6 +29,7 @@ import com.example.myfirstcomposeapp.components.MySwitch
 import com.example.myfirstcomposeapp.components.MyTexts
 import com.example.myfirstcomposeapp.components.MyTopAppBar
 import com.example.myfirstcomposeapp.components.ParentCheckBoxes
+import com.example.myfirstcomposeapp.components.ScrollList
 import com.example.myfirstcomposeapp.components.layout.MyColumn
 import com.example.myfirstcomposeapp.components.layout.MyComplexLayout
 import com.example.myfirstcomposeapp.components.layout.MyRow
@@ -49,7 +51,7 @@ class MainActivity : ComponentActivity() {
                         contentAlignment = Alignment.Center
                     ){
                         //Text(text = "Esta es mi screen")
-                        MyAdvanceList()
+                        MyGridList()
                     }
                 }
             }
